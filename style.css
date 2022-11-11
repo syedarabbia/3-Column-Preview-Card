@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px; 
+    width: 100%;
+    place-items: center;
+    
+} 
+.container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin: 100px 200px;
+    margin-bottom: 30px;
+    }
+.box1 {
+    padding: 50px;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.box2 {
+    padding: 50px;
+    background-color: hsl(184, 100%, 22%);
+}
+.box3 {
+    padding: 50px;
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1 {
+    padding: 25px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    text-transform: capitalize;
+    position: relative;
+    right: 25px;
+}
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 5px;
+    line-height: 1.5;
+    text-align: left;
+    position: relative;
+    right: 5px;
+    margin-bottom: 50px;
+}
+button {
+    height: 50px;
+    width: 125px;
+    border-radius: 30px;
+    border: 1px hsl(0, 0%, 95%) solid;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color:hsl(0, 0%, 95%);
+}
+.btn1 {
+    color: hsl(31, 77%, 52%);
+}
+.btn2 {
+    color: hsl(184, 100%, 22%);
+}
+.btn3 {
+    color: hsl(179, 100%, 13%);
+}
+.btn1:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+.btn2:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+.btn3:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+.attribution {
+    margin-top: 0px;
+    text-align: center;
+}
+button:hover { 
+    color: hsl(0, 0%, 95%);
+    
+}
+@media screen and (max-width:650px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        margin: 50px 100px;
+        margin-top: 70px;
+    }
+    .box1 {
+    max-height: 320px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+    .box2 {
+        max-height: 300px;
+    }
+    .box3 {
+        max-height: 320px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+.attribution {
+    text-align: center;
+    margin-bottom: 20px;
+}
+}
+    
